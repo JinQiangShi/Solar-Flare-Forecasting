@@ -1,0 +1,239 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>ResNet</h1>
+    
+    <p>ResNet模型的交叉验证结果如下：</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Val</th>
+        <th>Importance Threshold</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>1-3</td>
+        <td>≥C</td>
+        <td>0.79622</td>
+        <td>0.74458</td>
+        <td>0.87607</td>
+        <td>0.98135</td>
+        <td>0.82563</td>
+        <td>0.01865</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>4-6</td>
+        <td>≥C</td>
+        <td>0.77291</td>
+        <td>0.72329</td>
+        <td>0.86583</td>
+        <td>0.97104</td>
+        <td>0.81866</td>
+        <td>0.02896</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>7-9</td>
+        <td>≥C</td>
+        <td>0.78342</td>
+        <td>0.79524</td>
+        <td>0.90847</td>
+        <td>0.91568</td>
+        <td>0.94682</td>
+        <td>0.08432</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>10-12</td>
+        <td>≥C</td>
+        <td>0.79366</td>
+        <td>0.80037</td>
+        <td>0.91018</td>
+        <td>0.92301</td>
+        <td>0.94071</td>
+        <td>0.07699</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>1-3</td>
+        <td>≥M</td>
+        <td>0.58588</td>
+        <td>0.47386</td>
+        <td>0.72939</td>
+        <td>0.52285</td>
+        <td>0.94798</td>
+        <td>0.47715</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>4-6</td>
+        <td>≥M</td>
+        <td>0.61509</td>
+        <td>0.52209</td>
+        <td>0.76578</td>
+        <td>0.56392</td>
+        <td>0.90944</td>
+        <td>0.43608</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>7-9</td>
+        <td>≥M</td>
+        <td>0.60652</td>
+        <td>0.52659</td>
+        <td>0.77317</td>
+        <td>0.57595</td>
+        <td>0.87669</td>
+        <td>0.42405</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>10-12</td>
+        <td>≥M</td>
+        <td>0.60145</td>
+        <td>0.54664</td>
+        <td>0.79250</td>
+        <td>0.61032</td>
+        <td>0.82081</td>
+        <td>0.38968</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>1-3</td>
+        <td>≥X</td>
+        <td>0.46888</td>
+        <td>0.05936</td>
+        <td>0.50256</td>
+        <td>0.06424</td>
+        <td>0.98361</td>
+        <td>0.93576</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>4-6</td>
+        <td>≥X</td>
+        <td>0.49223</td>
+        <td>0.09276</td>
+        <td>0.67766</td>
+        <td>0.08251</td>
+        <td>0.81967</td>
+        <td>0.91749</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>7-9</td>
+        <td>≥X</td>
+        <td>0.44561</td>
+        <td>0.07234</td>
+        <td>0.61740</td>
+        <td>0.07143</td>
+        <td>0.83607</td>
+        <td>0.92857</td>
+    </tr>
+    <tr>
+        <td>ResNet34</td>
+        <td>10-12</td>
+        <td>≥X</td>
+        <td>0.41407</td>
+        <td>0.13082</td>
+        <td>0.81580</td>
+        <td>0.10746</td>
+        <td>0.59016</td>
+        <td>0.89254</td>
+    </tr>
+</table>
+    </div>
+
+        
+    <p>ResNet模型的具体框架如下：</p>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/ResidualA.png" alt="ResidualA">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/ResidualB.png" alt="ResidualB">
+    </div>
+    
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/ResNet.png" alt="ResNet">
+    </div>
+
+</div>

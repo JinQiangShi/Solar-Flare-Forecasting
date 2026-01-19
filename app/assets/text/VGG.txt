@@ -1,0 +1,234 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>VGG</h1>
+    
+    <p>VGG模型的交叉验证结果如下：</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Val</th>
+        <th>Importance Threshold</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>1-3</td>
+        <td>≥C</td>
+        <td>0.78950</td>
+        <td>0.78265</td>
+        <td>0.90051</td>
+        <td>0.93238</td>
+        <td>0.91369</td>
+        <td>0.06762</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>4-6</td>
+        <td>≥C</td>
+        <td>0.78919</td>
+        <td>0.79342</td>
+        <td>0.90677</td>
+        <td>0.92334</td>
+        <td>0.93461</td>
+        <td>0.07666</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>7-9</td>
+        <td>≥C</td>
+        <td>0.80934</td>
+        <td>0.81462</td>
+        <td>0.91643</td>
+        <td>0.92955</td>
+        <td>0.94333</td>
+        <td>0.07045</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>10-12</td>
+        <td>≥C</td>
+        <td>0.79496</td>
+        <td>0.79861</td>
+        <td>0.90904</td>
+        <td>0.92580</td>
+        <td>0.93548</td>
+        <td>0.07420</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>1-3</td>
+        <td>≥M</td>
+        <td>0.59074</td>
+        <td>0.54355</td>
+        <td>0.79363</td>
+        <td>0.61573</td>
+        <td>0.79961</td>
+        <td>0.38427</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>4-6</td>
+        <td>≥M</td>
+        <td>0.54463</td>
+        <td>0.52127</td>
+        <td>0.79193</td>
+        <td>0.62771</td>
+        <td>0.72447</td>
+        <td>0.37229</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>7-9</td>
+        <td>≥M</td>
+        <td>0.58689</td>
+        <td>0.54056</td>
+        <td>0.79250</td>
+        <td>0.61458</td>
+        <td>0.79576</td>
+        <td>0.38542</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>10-12</td>
+        <td>≥M</td>
+        <td>0.57964</td>
+        <td>0.50008</td>
+        <td>0.75895</td>
+        <td>0.55915</td>
+        <td>0.86513</td>
+        <td>0.44085</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>1-3</td>
+        <td>≥X</td>
+        <td>0.36009</td>
+        <td>0.10486</td>
+        <td>0.79420</td>
+        <td>0.09214</td>
+        <td>0.55738</td>
+        <td>0.90786</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>4-6</td>
+        <td>≥X</td>
+        <td>0.38346</td>
+        <td>0.07757</td>
+        <td>0.69471</td>
+        <td>0.07500</td>
+        <td>0.68852</td>
+        <td>0.92500</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>7-9</td>
+        <td>≥X</td>
+        <td>0.31021</td>
+        <td>0.13605</td>
+        <td>0.86811</td>
+        <td>0.11659</td>
+        <td>0.42623</td>
+        <td>0.88341</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>10-12</td>
+        <td>≥X</td>
+        <td>0.34802</td>
+        <td>0.08132</td>
+        <td>0.73678</td>
+        <td>0.07773</td>
+        <td>0.60656</td>
+        <td>0.92227</td>
+    </tr>
+</table>
+    </div>
+        
+    <p>VGG模型的具体框架如下：</p>
+    
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/BasicConv2d.png" alt="BasicConv2d.png">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/VGG.png" alt="VGG">
+    </div>
+
+</div>

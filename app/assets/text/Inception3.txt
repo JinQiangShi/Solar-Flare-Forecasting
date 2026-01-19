@@ -1,0 +1,251 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .image-wrapper {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>Inception</h1>
+    
+    <p>Inception模型的交叉验证结果如下：</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Val</th>
+        <th>Importance Threshold</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>1-3</td>
+        <td>≥C</td>
+        <td>0.79452</td>
+        <td>0.78761</td>
+        <td>0.90279</td>
+        <td>0.93416</td>
+        <td>0.91543</td>
+        <td>0.06584</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>4-6</td>
+        <td>≥C</td>
+        <td>0.78287</td>
+        <td>0.79010</td>
+        <td>0.90563</td>
+        <td>0.91887</td>
+        <td>0.93810</td>
+        <td>0.08113</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>7-9</td>
+        <td>≥C</td>
+        <td>0.81173</td>
+        <td>0.80896</td>
+        <td>0.91302</td>
+        <td>0.93673</td>
+        <td>0.92938</td>
+        <td>0.06327</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>10-12</td>
+        <td>≥C</td>
+        <td>0.79408</td>
+        <td>0.79047</td>
+        <td>0.90449</td>
+        <td>0.93128</td>
+        <td>0.92153</td>
+        <td>0.06872</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>1-3</td>
+        <td>≥M</td>
+        <td>0.52048</td>
+        <td>0.49471</td>
+        <td>0.77885</td>
+        <td>0.60621</td>
+        <td>0.71484</td>
+        <td>0.39379</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>4-6</td>
+        <td>≥M</td>
+        <td>0.58095</td>
+        <td>0.48800</td>
+        <td>0.74645</td>
+        <td>0.54249</td>
+        <td>0.89788</td>
+        <td>0.45751</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>7-9</td>
+        <td>≥M</td>
+        <td>0.59240</td>
+        <td>0.53353</td>
+        <td>0.78454</td>
+        <td>0.59777</td>
+        <td>0.82466</td>
+        <td>0.40223</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>10-12</td>
+        <td>≥M</td>
+        <td>0.55845</td>
+        <td>0.47044</td>
+        <td>0.73849</td>
+        <td>0.53458</td>
+        <td>0.87861</td>
+        <td>0.46542</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>1-3</td>
+        <td>≥X</td>
+        <td>0.40230</td>
+        <td>0.12105</td>
+        <td>0.80443</td>
+        <td>0.10141</td>
+        <td>0.59016</td>
+        <td>0.89859</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>4-6</td>
+        <td>≥X</td>
+        <td>0.45935</td>
+        <td>0.06670</td>
+        <td>0.56964</td>
+        <td>0.06824</td>
+        <td>0.90164</td>
+        <td>0.93176</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>7-9</td>
+        <td>≥X</td>
+        <td>0.48193</td>
+        <td>0.07864</td>
+        <td>0.62194</td>
+        <td>0.07465</td>
+        <td>0.86885</td>
+        <td>0.92535</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>10-12</td>
+        <td>≥X</td>
+        <td>0.43628</td>
+        <td>0.07202</td>
+        <td>0.62365</td>
+        <td>0.07133</td>
+        <td>0.81967</td>
+        <td>0.92867</td>
+    </tr>
+</table>
+    </div>
+
+        
+    <p>Inception模型的具体框架如下：</p>
+    
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/InceptionA.png" alt="InceptionA">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/InceptionB.png" alt="InceptionB">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/InceptionC.png" alt="InceptionC">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/InceptionD.png" alt="InceptionD">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/InceptionE.png" alt="InceptionE">
+    </div>
+
+    <div class="image-wrapper">
+        <img src=":/picture/assets/picture/Inception3.png" alt="Inception">
+    </div>
+
+</div>

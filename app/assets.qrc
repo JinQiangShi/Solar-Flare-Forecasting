@@ -1,0 +1,27 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>assets/icon/downArrow.svg</file>
+    <file>assets/icon/sun.png</file>
+    <file>assets/icon/ai_line.png</file>
+    <file>assets/icon/background_line.png</file>
+    <file>assets/icon/display_line.png</file>
+    <file>assets/icon/tag_line.png</file>
+    <file>assets/icon/target_line.png</file>
+  </qresource>
+  <qresource prefix="picture">
+    <file>assets/picture/ResNet.png</file>
+    <file>assets/picture/ResidualB.png</file>
+    <file>assets/picture/ResidualA.png</file>
+    <file>assets/picture/InceptionA.png</file>
+    <file>assets/picture/InceptionB.png</file>
+    <file>assets/picture/InceptionBlock.png</file>
+    <file>assets/picture/InceptionC.png</file>
+    <file>assets/picture/InceptionD.png</file>
+    <file>assets/picture/InceptionE.png</file>
+    <file>assets/picture/AlexNet.png</file>
+    <file>assets/picture/BasicConv2d.png</file>
+    <file>assets/picture/Inception3.png</file>
+    <file>assets/picture/InceptionBlock.png</file>
+    <file>assets/picture/VGG.png</file>
+  </qresource>
+</RCC>

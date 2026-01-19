@@ -1,0 +1,68 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>评估指标</h1>
+    
+    <p>模型评估共用到TSS、HSS、Accuracy、Precision、Recall和FAR六个评估指标。<br>
+其中TSS和HSS是气象学中的常用指标，因此将二者作为主要评估指标，其余作为辅助参考。</p>
+
+</div>

@@ -1,0 +1,297 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>总结</h1>
+    
+<p>下面给出各模型的交叉验证平均结果，同时给出现有同类研究的结果进行比较。</p>
+
+<p>其中Park等人<sup>[1]</sup>首次将卷积神经网络用于全日面磁场以预报≥C级耀斑；
+Yi等人<sup>[2]</sup>利用深度强化学习以优化≥M级耀斑预报的性能；
+Yan等人<sup>[3]</sup>在卷积神经网络基础上加入注意力机制以优化≥C和≥M级耀斑预报的性能。</p>
+
+
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Importance Threshold</th>
+        <th>Model</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>AlexNet</td>
+        <td>0.747±0.056</td>
+        <td>0.756±0.025</td>
+        <td>0.891±0.006</td>
+        <td>0.908±0.043</td>
+        <td>0.931±0.043</td>
+        <td>0.092±0.043</td>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>VGG</td>
+        <td>0.796±0.009</td>
+        <td>0.797±0.013</td>
+        <td>0.908±0.007</td>
+        <td>0.928±0.004</td>
+        <td>0.932±0.013</td>
+        <td>0.072±0.004</td>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>Inception</td>
+        <td>0.796±0.012</td>
+        <td>0.794±0.010</td>
+        <td>0.906±0.005</td>
+        <td>0.930±0.008</td>
+        <td>0.926±0.010</td>
+        <td>0.070±0.008</td>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>ResNet</td>
+        <td>0.787±0.011</td>
+        <td>0.76660.038</td>
+        <td>0.89060.023</td>
+        <td>0.948±0.033</td>
+        <td>0.883±0.070</td>
+        <td>0.052±0.033</td>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>Park等人</td>
+        <td>0.690±0.025</td>
+        <td>0.690±0.027</td>
+        <td>0.840±0.014</td>
+        <td>0.890±0.019</td>
+        <td>0.830±0.034</td>
+        <td>0.110±0.019</td>
+    </tr>
+    <tr>
+        <td>≥C</td>
+        <td>Yan等人</td>
+        <td>0.684±0.132</td>
+        <td>0.687±0.133</td>
+        <td>0.844±0.066</td>
+        <td>0.889±0.090</td>
+        <td>0.780±0.082</td>
+        <td>0.111±0.090</td>
+    </tr>
+</table>
+    </div>
+
+<p>对于阈值≥C，本研究的最优模型为VGG。
+对比Park等人，模型的各个指标均有提高，展现出了更好的性能；
+对比Yan等人，模型各指标具有更小的标准差，这意味着更优的稳定性，同时模型具有更低的误报率和更高的召回率。</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Importance Threshold</th>
+        <th>Model</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>AlexNet</td>
+        <td>0.529±0.043</td>
+        <td>0.465±0.029</td>
+        <td>0.744±0.041</td>
+        <td>0.561±0.071</td>
+        <td>0.813±0.160</td>
+        <td>0.439±0.071</td>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>VGG</td>
+        <td>0.575±0.021</td>
+        <td>0.528±0.020</td>
+        <td>0.784±0.017</td>
+        <td>0.604±0.031</td>
+        <td>0.796±0.057</td>
+        <td>0.396±0.031</td>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>Inception</td>
+        <td>0.563±0.032</td>
+        <td>0.497±0.027</td>
+        <td>0.762±0.023</td>
+        <td>0.570±0.037</td>
+        <td>0.829±0.082</td>
+        <td>0.430±0.037</td>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>ResNet</td>
+        <td>0.602±0.012</td>
+        <td>0.517±0.031</td>
+        <td>0.765±0.026</td>
+        <td>0.568±0.036</td>
+        <td>0.889±0.054</td>
+        <td>0.432±0.036</td>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>Yi等人</td>
+        <td>0.580±0.020</td>
+        <td>0.420±0.020</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+        <td>…</td>
+    </tr>
+    <tr>
+        <td>≥M</td>
+        <td>Yan等人</td>
+        <td>0.561±0.103</td>
+        <td>0.324±0.070</td>
+        <td>0.738±0.041</td>
+        <td>0.308±0.044</td>
+        <td>0.837±0.113</td>
+        <td>0.692±0.044</td>
+    </tr>
+</table>
+    </div>
+
+<p>对于阈值≥M，本研究的最优模型为ResNet，相较现有研究同样表现出更好的性能、更优的稳定性和更低的误报率。</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Importance Threshold</th>
+        <th>Model</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>≥X</td>
+        <td>AlexNet</td>
+        <td>0.405±0.015</td>
+        <td>0.083±0.026</td>
+        <td>0.669±0.131</td>
+        <td>0.078±0.016</td>
+        <td>0.738±0.157</td>
+        <td>0.922±0.016</td>
+    </tr>
+    <tr>
+        <td>≥X</td>
+        <td>VGG</td>
+        <td>0.350±0.031</td>
+        <td>0.100±0.027</td>
+        <td>0.733±0.075</td>
+        <td>0.090±0.019</td>
+        <td>0.570±0.110</td>
+        <td>0.910±0.019</td>
+    </tr>
+    <tr>
+        <td>≥X</td>
+        <td>Inception</td>
+        <td>0.445±0.034</td>
+        <td>0.085±0.025</td>
+        <td>0.655±0.103</td>
+        <td>0.079±0.015</td>
+        <td>0.795±0.141</td>
+        <td>0.921±0.015</td>
+    </tr>
+    <tr>
+        <td>≥X</td>
+        <td>ResNet</td>
+        <td>0.455±0.033</td>
+        <td>0.089±0.031</td>
+        <td>0.653±0.130</td>
+        <td>0.081±0.019</td>
+        <td>0.807±0.162</td>
+        <td>0.919±0.019</td>
+    </tr>
+</table>
+    </div>
+
+<p>对于阈值≥X，本研究的最优模型为ResNet，但目前没有相关研究给出过类似指标，无法进行比较。</p>
+
+<p>综上所述，本研究的最优模型为ResNet，并从评估指标上来看，模型性能较现有同类研究有所提升。</p>
+
+<blockquote style="border:1px solid #ddd; background:#f8f9fa; border-radius:4px; font-size: 9pt;">
+<p style="margin:0;">
+参考文献：<br>
+[1] PARK E, MOON Y J, SHIN S, et al. Application of the deep convolutional neural network to the forecast of solar flare occurrence using full-disk solar magnetograms[J]. <i>The Astrophysical Journal</i>, 2018, 869(2): 91.<br>
+[2] YI K W, MOON Y J, JEONG H J. Application of deep reinforcement learning to major solar flare forecasting[J]. <i>The Astrophysical Journal Supplement Series</i>, 2023, 265(2): 34.<br>
+[3] YAN P, LI X, ZHENG Y, et al. A real-time solar flare forecasting system with deep learning methods[J]. <i>Astrophysics and Space Science</i>, 2024, 369(10): 110.
+</p>
+</blockquote>
+
+</div>

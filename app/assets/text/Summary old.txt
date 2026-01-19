@@ -1,0 +1,202 @@
+<style>
+    .container {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.5;
+        color: #2d3748;
+        max-width: 1000px;
+        margin: 0px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        color: #2b6cb0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0em 0;
+        text-align: center;
+    }
+
+    .table-wrapper {
+        text-align: center; 
+        overflow-x: auto;
+        margin: 0px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0px 0;
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #e2e8f0;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2b6cb0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    p {
+        margin: 0.8em 0;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <h1>总结</h1>
+    
+    <p>各模型交叉验证后，取最优模型的结果如下：</p>
+
+    <div class="table-wrapper">
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Importance Threshold</th>
+        <th>TSS</th>
+        <th>HSS</th>
+        <th>Accuracy</th>
+        <th>Precision</th>
+        <th>Recall</th>
+        <th>FAR</th>
+    </tr>
+    <tr>
+        <td>AlexNet</td>
+        <td>≥C</td>
+        <td>0.78710</td>
+        <td>0.77441</td>
+        <td>0.89596</td>
+        <td>0.93659</td>
+        <td>0.90148</td>
+        <td>0.06341</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥M</td>
+        <td>0.52958</td>
+        <td>0.48108</td>
+        <td>0.76236</td>
+        <td>0.57225</td>
+        <td>0.77071</td>
+        <td>0.42775</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥X</td>
+        <td>0.40270</td>
+        <td>0.07833</td>
+        <td>0.68277</td>
+        <td>0.07521</td>
+        <td>0.72131</td>
+        <td>0.92479</td>
+    </tr>
+    <tr>
+        <td>VGG</td>
+        <td>≥C</td>
+        <td>0.78950</td>
+        <td>0.78265</td>
+        <td>0.90051</td>
+        <td>0.93238</td>
+        <td>0.91369</td>
+        <td>0.06762</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥M</td>
+        <td>0.59074</td>
+        <td>0.54355</td>
+        <td>0.79363</td>
+        <td>0.61573</td>
+        <td>0.79961</td>
+        <td>0.38427</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥X</td>
+        <td>0.36009</td>
+        <td>0.10486</td>
+        <td>0.79420</td>
+        <td>0.09214</td>
+        <td>0.55738</td>
+        <td>0.90786</td>
+    </tr>
+    <tr>
+        <td>Inception</td>
+        <td>≥C</td>
+        <td>0.81173</td>
+        <td>0.80896</td>
+        <td>0.91302</td>
+        <td>0.93673</td>
+        <td>0.92938</td>
+        <td>0.06327</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥M</td>
+        <td>0.59240</td>
+        <td>0.53353</td>
+        <td>0.78454</td>
+        <td>0.59777</td>
+        <td>0.82466</td>
+        <td>0.40223</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥X</td>
+        <td>0.48193</td>
+        <td>0.07864</td>
+        <td>0.62194</td>
+        <td>0.07465</td>
+        <td>0.86885</td>
+        <td>0.92535</td>
+    </tr>
+    <tr>
+        <td>ResNet</td>
+        <td>≥C</td>
+        <td>0.78342</td>
+        <td>0.79524</td>
+        <td>0.90847</td>
+        <td>0.91568</td>
+        <td>0.94682</td>
+        <td>0.08432</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥M</td>
+        <td>0.60652</td>
+        <td>0.52659</td>
+        <td>0.77317</td>
+        <td>0.57595</td>
+        <td>0.87669</td>
+        <td>0.42405</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>≥X</td>
+        <td>0.44561</td>
+        <td>0.07234</td>
+        <td>0.61740</td>
+        <td>0.07143</td>
+        <td>0.83607</td>
+        <td>0.92857</td>
+    </tr>
+</table>
+    </div>
+
+</div>
