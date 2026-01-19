@@ -10,7 +10,7 @@ Four deep convolutional neural network architectures—AlexNet, VGGNet, Inceptio
 
 The models were evaluated using flare activity data from 2020 to 2024. The evaluation metrics are summarized below:
 
-| 阈值 | 模型        | TSS               | HSS               | Accuracy          | Precision         | Recall              | FAR               |
+| Threshold | Model        | TSS               | HSS               | Accuracy          | Precision         | Recall              | FAR               |
 | ---- | ----------- | ----------------- | ----------------- | ----------------- | ----------------- | ------------------- | ----------------- |
 | ≥C   | AlexNet     | $0.747 \pm 0.056$ | $0.756 \pm 0.025$ | $0.891 \pm 0.006$ | $0.908 \pm 0.043$ | $0.931  \pm 0.0043$ | $0.092 \pm 0.043$ |
 |      | VGG-16      | $0.796 \pm .009$  | $0.797 \pm 0.013$ | $0.908 \pm 0.007$ | $0.928 \pm 0.004$ | $0.932 \pm 0.013$   | $0.072 \pm0.004$  |
